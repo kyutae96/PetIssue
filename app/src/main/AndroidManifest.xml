@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.PetIssue">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.example.PetIssue.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.example.PetIssue.LoginActivity"/>
+        <activity android:name="com.example.PetIssue.SignUpActivity"/>
+        <activity android:name="com.example.PetIssue.FindActivity"/>
+        <activity android:name="com.example.PetIssue.ProfileActivity"/>
+        <activity android:name="com.example.PetIssue.MainActivity"/>
+        <activity android:name="com.example.PetIssue.UploadActivity"/>
+        <activity android:name="com.example.PetIssue.WritePostActivity"/>
+        <activity android:name="com.example.PetIssue.GalleryActivity"/>
+        <activity android:name="com.example.PetIssue.BasicActivity"/>
+        <activity android:name="com.example.PetIssue.PostActivity"/>
+        <activity android:name="com.example.PetIssue.CameraActivity"/>
+    </application>
+
+</manifest>
